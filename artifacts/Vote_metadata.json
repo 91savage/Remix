@@ -116,9 +116,9 @@
 	},
 	"sources": {
 		"vote.sol": {
-			"keccak256": "0x617bf9a1d95b9a96463225326d6513d4d6850872b19cf2b20508dcb79526f861",
+			"keccak256": "0x828fb71adc34ec80023e85656557c94a10605fd7c79cf8216a3bdf2ef3f9f8bf",
 			"urls": [
-				"bzzr://83312bc065257f527799808123f5fed9bf38abb3ac9405b725ec0911478fa779"
+				"bzzr://8cc5f615111061192b23a00d5ca9873bbf341ba2e135f540b7d7cfced28fb1e3"
 			]
 		}
 	},

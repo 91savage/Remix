@@ -20,7 +20,7 @@ contract Vote {
 
     // modifier
 
-    // constructor kk s
+    // constructor kk ss
 
     // candidator
     function addCandidator(string _name) public {
