@@ -1,0 +1,126 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "finishVote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidatorList",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "upVote",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addCandidator",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_indexOfCandidator",
+						"type": "uint256"
+					}
+				],
+				"name": "upVote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "AddCandidator",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "candidator",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "upVote",
+						"type": "uint256"
+					}
+				],
+				"name": "UpVote",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"vote.sol": "Vote"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"vote.sol": {
+			"keccak256": "0x617bf9a1d95b9a96463225326d6513d4d6850872b19cf2b20508dcb79526f861",
+			"urls": [
+				"bzzr://83312bc065257f527799808123f5fed9bf38abb3ac9405b725ec0911478fa779"
+			]
+		}
+	},
+	"version": 1
+}
