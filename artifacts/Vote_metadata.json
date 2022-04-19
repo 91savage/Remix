@@ -66,6 +66,12 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -93,6 +99,30 @@
 				],
 				"name": "UpVote",
 				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "live",
+						"type": "bool"
+					}
+				],
+				"name": "FinishVote",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "Voting",
+				"type": "event"
 			}
 		],
 		"devdoc": {
@@ -116,9 +146,9 @@
 	},
 	"sources": {
 		"vote.sol": {
-			"keccak256": "0x828fb71adc34ec80023e85656557c94a10605fd7c79cf8216a3bdf2ef3f9f8bf",
+			"keccak256": "0x2c959767396c22ff0099fa831cf43c52ec0c9e91d15ead73d4cd00ccc9534be2",
 			"urls": [
-				"bzzr://8cc5f615111061192b23a00d5ca9873bbf341ba2e135f540b7d7cfced28fb1e3"
+				"bzzr://3bb1d540602bf2e08b3ed66a62d59c93984f02249dc039eaf8c7ca17a090c124"
 			]
 		}
 	},
