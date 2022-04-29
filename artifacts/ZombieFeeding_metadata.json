@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.4.24+commit.e67f0147"
+		"version": "0.4.26+commit.4563c3fc"
 	},
 	"language": "Solidity",
 	"output": {
@@ -13,11 +13,11 @@
 						"type": "uint256"
 					},
 					{
-						"name": "_targetDna",
+						"name": "_kittyId",
 						"type": "uint256"
 					}
 				],
-				"name": "feedAndMultiply",
+				"name": "feedOnKitty",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -63,6 +63,28 @@
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_zombieId",
+						"type": "uint256"
+					},
+					{
+						"name": "_targetDna",
+						"type": "uint256"
+					},
+					{
+						"name": "_species",
+						"type": "string"
+					}
+				],
+				"name": "feedAndMultiply",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -123,15 +145,15 @@
 	},
 	"sources": {
 		"zombiefactory.sol": {
-			"keccak256": "0x1c651a2e2b47e9f4e1a7f1a50d0259b03db5376a5ead7eb4d7b2dc7e9093d4fa",
+			"keccak256": "0x4f5aabc7705e78db5dfda5000b32290872afc4aab0a3094fb78517a73ef065f9",
 			"urls": [
-				"bzzr://d64755022b5011dd73f8b6e163ed3901f457c1fdff56c85993acd69be16b27ab"
+				"bzzr://d8425ccff2af07349fd0d7376e194c5a318f5d2c55dae2cc9dbf6e8a4ff43d08"
 			]
 		},
 		"zombiefeeding.sol": {
-			"keccak256": "0x76a20856dd5c270d8126eff5700f24300c57f3fbf3c4d5e2eb9ccbf383a17d9a",
+			"keccak256": "0x0c19a8658876f6219412adb2a4cb3caae70e19530e27f1fa3df3972fb8c1d1f2",
 			"urls": [
-				"bzzr://79d95bd9f8e9e5fc0d6efb9746c9e7e0c615e762ac2e71858084a563d0a5dc04"
+				"bzzr://1e072580248dbd85f7fddb9ebe819c8ec74621472d12a137362d49383d1fe515"
 			]
 		}
 	},
