@@ -40,6 +40,14 @@
 					{
 						"name": "dna",
 						"type": "uint256"
+					},
+					{
+						"name": "level",
+						"type": "uint32"
+					},
+					{
+						"name": "readyTime",
+						"type": "uint32"
 					}
 				],
 				"payable": false,
@@ -69,19 +77,11 @@
 				"constant": false,
 				"inputs": [
 					{
-						"name": "_zombieId",
-						"type": "uint256"
-					},
-					{
-						"name": "_targetDna",
-						"type": "uint256"
-					},
-					{
-						"name": "_species",
-						"type": "string"
+						"name": "_address",
+						"type": "address"
 					}
 				],
-				"name": "feedAndMultiply",
+				"name": "setKittyContractAddress",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -96,6 +96,34 @@
 					}
 				],
 				"name": "createRandomZombie",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -122,10 +150,34 @@
 				],
 				"name": "NewZombie",
 				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"methods": {
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			}
 		},
 		"userdoc": {
 			"methods": {}
@@ -144,16 +196,22 @@
 		"remappings": []
 	},
 	"sources": {
-		"zombiefactory.sol": {
-			"keccak256": "0x4f5aabc7705e78db5dfda5000b32290872afc4aab0a3094fb78517a73ef065f9",
+		"ownable.sol": {
+			"keccak256": "0x7104da7dfe50955e8b9bf0ddd861252fb610d00dfb74aa72b7157ca2659ca0de",
 			"urls": [
-				"bzzr://d8425ccff2af07349fd0d7376e194c5a318f5d2c55dae2cc9dbf6e8a4ff43d08"
+				"bzzr://175452fb95791f03bdd50bfca674056f904ba383f1393e4188172d639c94cd36"
+			]
+		},
+		"zombiefactory.sol": {
+			"keccak256": "0x66ecf27c94c4746e74f0d427f2a69e3bfac57b3207524779c0cb244b0c576cf4",
+			"urls": [
+				"bzzr://979ddd561937b856ac28e19da2c44cf7897f685e5508f91e6ba5d978e4ba04df"
 			]
 		},
 		"zombiefeeding.sol": {
-			"keccak256": "0x0c19a8658876f6219412adb2a4cb3caae70e19530e27f1fa3df3972fb8c1d1f2",
+			"keccak256": "0x7dde6132ccc1e47bff0c7e877ed881c42dd6ecb3c36ce1c336b42ec5ffa784b7",
 			"urls": [
-				"bzzr://1e072580248dbd85f7fddb9ebe819c8ec74621472d12a137362d49383d1fe515"
+				"bzzr://07d5a8a77c560cea6fde0045f677d2587b29c337194c972f624bd8533beaed88"
 			]
 		}
 	},
